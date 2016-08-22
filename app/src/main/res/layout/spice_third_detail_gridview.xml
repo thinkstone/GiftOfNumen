@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="2dp"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/spice_third_detail_inflater_image"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"
+        android:layout_height="70dp" />
+    <TextView
+        android:id="@+id/spice_third_detail_inflater_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:singleLine="true"
+        />
+    <Button
+        android:id="@+id/spice_third_detail_inflater_Button"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/spice_third_detail_btnshape"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:text="立即下载"
+        android:layout_height="30dp" />
+</LinearLayout>

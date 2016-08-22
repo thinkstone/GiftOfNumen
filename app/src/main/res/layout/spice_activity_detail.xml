@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shiwei.giftofnumen.spice.activity.SpiceActivityDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="#d43333"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/spice_third_detail_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/spice_third_detail_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:background="#00000000"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/spice_third_detail_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/share" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp">
+        <ImageView
+            android:id="@+id/spice_third_detail_image"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="230dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spice_third_detail_image"
+                android:layout_alignBottom="@+id/spice_third_detail_image"
+                android:layout_margin="3dp"
+                android:src="@drawable/g_biao"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/spice_third_detail_daodu"
+            android:layout_width="match_parent"
+           android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+        <com.example.shiwei.giftofnumen.customerview.CustomGridView
+            android:id="@+id/spice_third_detail_gridview"
+            android:layout_width="match_parent"
+            android:numColumns="4"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"></com.example.shiwei.giftofnumen.customerview.CustomGridView>
+    </LinearLayout>
+</ScrollView>

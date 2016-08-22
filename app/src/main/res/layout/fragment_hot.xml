@@ -1,0 +1,85 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    tools:context="com.example.shiwei.giftofnumen.hot.HotFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_hot"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="#d43333"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/hot_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/title_bar_menu" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:background="#00000000"
+                android:gravity="center"
+                android:text="热门游戏"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#dddddd"
+                    android:padding="7dp"
+                    android:text="精品推荐" />
+            <com.example.shiwei.giftofnumen.customerview.CustomerListview
+                android:id="@+id/hot_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.example.shiwei.giftofnumen.customerview.CustomerListview>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dddddd"
+                android:padding="7dp"
+                android:text="热门推荐" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.shiwei.giftofnumen.customerview.CustomGridView
+                    android:id="@+id/hot_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="3"></com.example.shiwei.giftofnumen.customerview.CustomGridView>
+            </ScrollView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
